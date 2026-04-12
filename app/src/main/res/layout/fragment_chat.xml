@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F8FF">
+
+    <!-- Header -->
+    <LinearLayout
+        android:id="@+id/chatHeader"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/gradient_header"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="16dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            android:tint="#FFFFFF"
+            android:background="@drawable/bg_card"
+            android:padding="8dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rohit Kumar"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Online • Bike Rider"
+                android:textSize="12sp"
+                android:textColor="#FFFFFF"
+                android:alpha="0.8" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@android:drawable/ic_menu_call"
+            android:tint="#FFFFFF" />
+
+    </LinearLayout>
+
+    <!-- Chat Messages Area -->
+    <ScrollView
+        android:id="@+id/chatScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/chatInputArea"
+        android:layout_below="@id/chatHeader"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:id="@+id/chatMessagesContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Time Divider -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Today"
+                android:textSize="12sp"
+                android:textColor="#757575"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Received Message -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginEnd="60dp"
+                android:layout_marginBottom="12dp"
+                android:background="#FFFFFF"
+                android:padding="12dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hi! I'm on my way to pick you up. I'll be there in 3 minutes."
+                    android:textSize="14sp"
+                    android:textColor="#212121" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10:30 AM"
+                    android:textSize="10sp"
+                    android:textColor="#9E9E9E"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="4dp" />
+
+            </LinearLayout>
+
+            <!-- Sent Message -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginStart="60dp"
+                android:layout_marginBottom="12dp"
+                android:background="#00BCD4"
+                android:padding="12dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Great! I'm waiting at the main gate."
+                    android:textSize="14sp"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10:31 AM"
+                    android:textSize="10sp"
+                    android:textColor="#FFFFFF"
+                    android:alpha="0.8"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="4dp" />
+
+            </LinearLayout>
+
+            <!-- Received Message -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginEnd="60dp"
+                android:layout_marginBottom="12dp"
+                android:background="#FFFFFF"
+                android:padding="12dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="I can see you. Wearing a blue shirt?"
+                    android:textSize="14sp"
+                    android:textColor="#212121" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10:33 AM"
+                    android:textSize="10sp"
+                    android:textColor="#9E9E9E"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="4dp" />
+
+            </LinearLayout>
+
+            <!-- Sent Message -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginStart="60dp"
+                android:layout_marginBottom="12dp"
+                android:background="#00BCD4"
+                android:padding="12dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes, that's me!"
+                    android:textSize="14sp"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10:33 AM"
+                    android:textSize="10sp"
+                    android:textColor="#FFFFFF"
+                    android:alpha="0.8"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="4dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- Chat Input Area -->
+    <LinearLayout
+        android:id="@+id/chatInputArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        android:elevation="8dp"
+        android:padding="12dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@android:drawable/ic_menu_add"
+            android:tint="#00BCD4"
+            android:layout_marginEnd="8dp" />
+
+        <EditText
+            android:id="@+id/chatInput"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:hint="Type a message..."
+            android:textSize="15sp"
+            android:textColor="#212121"
+            android:background="@drawable/bg_input_field"
+            android:paddingHorizontal="16dp" />
+
+        <ImageView
+            android:id="@+id/sendButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@android:drawable/ic_menu_send"
+            android:tint="#FFFFFF"
+            android:background="@drawable/bg_button_cyan"
+            android:padding="12dp"
+            android:layout_marginStart="8dp"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground" />
+
+    </LinearLayout>
+
+</RelativeLayout>

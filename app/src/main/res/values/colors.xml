@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    <!-- Primary Theme Colors -->
+    <color name="cyan_primary">#00D4FF</color>
+    <color name="cyan_dark">#00B8E6</color>
+    <color name="blue_primary">#2979FF</color>
+    <color name="blue_dark">#2962FF</color>
+    
+    <!-- Gradient Colors -->
+    <color name="gradient_cyan_start">#00E5FF</color>
+    <color name="gradient_blue_end">#2979FF</color>
+    
+    <!-- Background Colors -->
+    <color name="bg_light">#F0F8FF</color>
+    <color name="bg_card">#FFFFFF</color>
+    <color name="input_bg">#E3F2FD</color>
+    
+    <!-- Text Colors -->
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="text_hint">#9E9E9E</color>
+    
+    <!-- Accent Colors -->
+    <color name="accent_cyan">#00BCD4</color>
+    <color name="join_button_blue">#448AFF</color>
+    
+    <!-- Frosted Glass -->
+    <color name="glass_bg">#CCFFFFFF</color>
+    <color name="glass_border">#1AFFFFFF</color>
+</resources>
