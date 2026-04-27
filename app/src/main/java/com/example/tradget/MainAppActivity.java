@@ -20,7 +20,7 @@ public class MainAppActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main_app);
 
         if (!Places.isInitialized()) {
-            Places.initialize(getApplicationContext(), "API KEY");
+            Places.initialize(getApplicationContext(), "Google API Key");
         }
 
 
