@@ -1,5 +1,59 @@
 <resources>
     <string name="app_name">TradGet</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tagline">Split fuel. Share rides. Save money.</string>
+
+    <!-- Home fragment -->
+    <string name="label_passenger">Passenger</string>
+    <string name="label_rider">Rider</string>
+    <string name="hint_from">From - Current Location</string>
+    <string name="hint_to">Where to?</string>
+    <string name="btn_search_ride">Search Ride</string>
+    <string name="section_available_rides">Available Rides</string>
+    <string name="btn_join_ride">Join Ride</string>
+
+    <!-- Location search dialog -->
+    <string name="title_select_pickup">Select Pickup Location</string>
+    <string name="title_select_destination">Select Destination</string>
+    <string name="hint_type_location">Type location…</string>
+
+    <!-- Map activity -->
+    <string name="btn_confirm_ride">Confirm Ride</string>
+    <string name="label_distance">Distance</string>
+    <string name="label_eta">ETA</string>
+    <string name="label_fuel_cost_split">⛽  Fuel Cost Split</string>
+    <string name="label_fuel_price">Fuel price (₹/L)</string>
+    <string name="label_passengers">Passengers</string>
+    <string name="label_cost_per_person">Cost per person</string>
+    <string name="note_fuel_efficiency">* Assumes avg. 40 km/L bike fuel efficiency</string>
+    <string name="label_you_are_here">You are here</string>
+    <string name="msg_fetching_route">Fetching route…</string>
+    <string name="msg_route_error">Could not fetch route</string>
+    <string name="msg_pickup">Pickup</string>
+    <string name="msg_dropoff">Drop-off</string>
+
+    <!-- Profile fragment -->
+    <string name="menu_ride_history">Ride History</string>
+    <string name="menu_payment_methods">Payment Methods</string>
+    <string name="menu_emergency">Emergency Contacts</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_help">Help &amp; Support</string>
+    <string name="btn_logout">Logout</string>
+    <string name="label_rides_taken">Rides Taken</string>
+    <string name="label_saved">Saved</string>
+    <string name="label_rating">Rating</string>
+    <string name="label_upi_linked">UPI Linked</string>
+
+    <!-- History fragment -->
+    <string name="tab_completed">Completed</string>
+    <string name="tab_cancelled">Cancelled</string>
+    <string name="tab_scheduled">Scheduled</string>
+    <string name="label_your_rides">Your Rides</string>
+
+    <!-- Firebase Auth & Security -->
+    <!-- Set to "" to allow any email, or e.g. "@university.ac.in" to restrict -->
+    <string name="university_email_domain">@university.ac.in</string>
+    <!-- Placeholder: Google Sign-In Web Client ID.
+         In a real app, this is auto-generated in values/strings.xml by the google-services plugin.
+         We define it here as a fallback/stub for compilation. -->
+    <string name="default_web_client_id">918594452608-8sulh4ofbsou5f8k97oao1ame4s03hff.apps.googleusercontent.com</string>
 </resources>

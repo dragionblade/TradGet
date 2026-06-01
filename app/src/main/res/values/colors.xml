@@ -22,10 +22,34 @@
     <color name="text_primary">#212121</color>
     <color name="text_secondary">#757575</color>
     <color name="text_hint">#9E9E9E</color>
+    <color name="text_light">#9E9E9E</color>
     
     <!-- Accent Colors -->
     <color name="accent_cyan">#00BCD4</color>
     <color name="join_button_blue">#448AFF</color>
+    
+    <!-- Secondary Colors -->
+    <color name="accent_green">#4CAF50</color>
+    <color name="accent_red">#FF5252</color>
+    <color name="accent_orange">#FF9800</color>
+    <color name="accent_yellow">#FFC107</color>
+    
+    <!-- Additional Neutral Colors -->
+    <color name="bg_white">#FFFFFF</color>
+    <color name="bg_light_gray">#F5F5F5</color>
+    <color name="bg_medium_gray">#EEEEEE</color>
+    <color name="bg_dark_gray">#FAFAFA</color>
+    
+    <!-- Status Colors -->
+    <color name="status_success">#4CAF50</color>
+    <color name="status_warning">#FF9800</color>
+    <color name="status_error">#F44336</color>
+    <color name="status_info">#2196F3</color>
+    
+    <!-- Shadow/Overlay -->
+    <color name="overlay_dark">#80000000</color>
+    <color name="overlay_light">#80FFFFFF</color>
+    <color name="divider">#BDBDBD</color>
     
     <!-- Frosted Glass -->
     <color name="glass_bg">#CCFFFFFF</color>

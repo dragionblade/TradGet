@@ -28,6 +28,7 @@
                 android:tint="#00BCD4" />
 
             <TextView
+                android:id="@+id/profileName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Piyush Patel"
@@ -37,6 +38,7 @@
                 android:layout_marginTop="12dp" />
 
             <TextView
+                android:id="@+id/profileContact"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="+91 98765 43210"
@@ -66,6 +68,7 @@
                 android:gravity="center">
 
                 <TextView
+                    android:id="@+id/profileRidesTaken"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="47"
@@ -94,6 +97,7 @@
                 android:gravity="center">
 
                 <TextView
+                    android:id="@+id/profileSaved"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="₹1,240"
@@ -122,6 +126,7 @@
                 android:gravity="center">
 
                 <TextView
+                    android:id="@+id/profileRating"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="4.8"

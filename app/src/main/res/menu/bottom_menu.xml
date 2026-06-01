@@ -5,7 +5,7 @@
     <item
         android:id="@+id/nav_home"
         android:title="Home"
-        android:icon="@android:drawable/ic_menu_view"/>
+        android:icon="@android:drawable/ic_menu_compass"/>
 
     <item
         android:id="@+id/nav_chat"
@@ -20,6 +20,6 @@
     <item
         android:id="@+id/nav_profile"
         android:title="Profile"
-        android:icon="@android:drawable/ic_menu_myplaces"/>
+        android:icon="@android:drawable/ic_menu_view"/>
 
 </menu>

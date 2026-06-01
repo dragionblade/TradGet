@@ -169,6 +169,7 @@
             android:foreground="?attr/selectableItemBackground">
 
             <TextView
+                android:id="@+id/searchRideLabel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Search Ride"
@@ -180,6 +181,7 @@
 
         <!-- Available Rides Section -->
         <TextView
+            android:id="@+id/ridesTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="16dp"
@@ -189,150 +191,39 @@
             android:textStyle="bold"
             android:textColor="#212121" />
 
-        <!-- Ride Card 1 -->
-        <LinearLayout
+        <!-- Loading spinner shown while Firestore query runs -->
+        <ProgressBar
+            android:id="@+id/ridesProgress"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:indeterminateTint="#00BCD4"
+            android:visibility="gone" />
+
+        <!-- Empty state -->
+        <TextView
+            android:id="@+id/noRidesLabel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="16dp"
-            android:layout_marginTop="12dp"
-            android:orientation="vertical"
-            android:background="@drawable/bg_card"
-            android:padding="16dp"
-            android:elevation="4dp">
+            android:layout_marginTop="16dp"
+            android:text="No rides found for this route.\nTry a different destination or check back later."
+            android:textSize="14sp"
+            android:textColor="#9E9E9E"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:visibility="gone" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center_vertical">
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Rohit • Bike"
-                        android:textSize="16sp"
-                        android:textStyle="bold"
-                        android:textColor="#212121" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="2 min away • 4.8 ★"
-                        android:textSize="13sp"
-                        android:textColor="#757575"
-                        android:layout_marginTop="2dp" />
-
-                </LinearLayout>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="₹45"
-                    android:textSize="20sp"
-                    android:textStyle="bold"
-                    android:textColor="#00BCD4" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginTop="12dp"
-                android:background="@drawable/bg_button_join"
-                android:gravity="center"
-                android:clickable="true"
-                android:foreground="?attr/selectableItemBackground">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Join Ride"
-                    android:textSize="14sp"
-                    android:textStyle="bold"
-                    android:textColor="#FFFFFF" />
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-        <!-- Ride Card 2 -->
+        <!-- Dynamic ride cards are added here by HomeFragment -->
         <LinearLayout
+            android:id="@+id/dynamicRidesContainer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:orientation="vertical"
             android:layout_marginHorizontal="16dp"
             android:layout_marginTop="12dp"
-            android:layout_marginBottom="100dp"
-            android:orientation="vertical"
-            android:background="@drawable/bg_card"
-            android:padding="16dp"
-            android:elevation="4dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center_vertical">
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Simran • Scooty"
-                        android:textSize="16sp"
-                        android:textStyle="bold"
-                        android:textColor="#212121" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="5 min away • 4.9 ★"
-                        android:textSize="13sp"
-                        android:textColor="#757575"
-                        android:layout_marginTop="2dp" />
-
-                </LinearLayout>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="₹38"
-                    android:textSize="20sp"
-                    android:textStyle="bold"
-                    android:textColor="#00BCD4" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginTop="12dp"
-                android:background="@drawable/bg_button_join"
-                android:gravity="center"
-                android:clickable="true"
-                android:foreground="?attr/selectableItemBackground">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Join Ride"
-                    android:textSize="14sp"
-                    android:textStyle="bold"
-                    android:textColor="#FFFFFF" />
-
-            </LinearLayout>
-
-        </LinearLayout>
+            android:layout_marginBottom="100dp" />
 
     </LinearLayout>
 

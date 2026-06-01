@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.tradget">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
     <application
+        android:name=".TradGetApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="TradGet"
@@ -15,27 +15,48 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TradGet">
 
+        <!-- Google Maps API Key — injected from local.properties at build time -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyB2Sj6qedyMxJFm851wbc7AjlKgCrz1lkk"/>
+            android:value="${MAPS_API_KEY}"/>
 
-        <activity android:name=".MapActivity"/>
-        
-        <activity 
-            android:name="com.google.android.libraries.places.widget.AutocompleteActivity"
-            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
-            tools:replace="android:theme" />
-
+        <!-- Splash / entry point — routes to Auth or Main based on Firebase auth state -->
         <activity
-            android:name=".MainAppActivity"
-            android:exported="true">
-
+            android:name=".LauncherActivity"
+            android:exported="true"
+            android:theme="@style/Theme.TradGet">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
-
         </activity>
+
+        <!-- Auth screen — sign-in / sign-up -->
+        <activity
+            android:name=".AuthActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize"/>
+
+        <!-- Main app host (bottom navigation) -->
+        <activity
+            android:name=".MainAppActivity"
+            android:exported="false"/>
+
+        <!-- Map / route view -->
+        <activity
+            android:name=".MapActivity"
+            android:exported="false"/>
+
+        <!-- Ride publishing form (Rider mode) -->
+        <activity
+            android:name=".PublishRideActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize"/>
+
+        <!-- Ride detail + join request (Passenger mode) -->
+        <activity
+            android:name=".RideDetailActivity"
+            android:exported="false"/>
 
     </application>
 
